@@ -1,5 +1,5 @@
 # mktmpdir
-Create a temperary directory so you can test stuff without worrying where to store it
+Create a temporary directory so you can test stuff without worrying where to store it
 
 ## Installation
 
@@ -12,16 +12,16 @@ source ~/.bashrc
 
 ## Usage
 
-To create a temperary directory and spawn a shell in it, run
+To create a temporary directory and spawn a shell in it, run
 ```bash
 mktmpdir
 ```
 
-You will spawn into a temperary directory like the following
+You will spawn into a temporary directory like the following
 
 ```bash
 ~/mktmpdir$ mktmpdir
-creating temparay directory...
+creating temporary directory...
 entering /tmp/tmp.Fawdyzi3dh...
 (temp) /tmp/tmp.Fawdyzi3dh$ ls
 (temp) /tmp/tmp.Fawdyzi3dh$ pwd
@@ -31,7 +31,7 @@ entering /tmp/tmp.Fawdyzi3dh...
 To exit the environment, simpily exit
 ```
 (temp) /tmp/tmp.Fawdyzi3dh$ exit
-Deleted temp working directory /tmp/tmp.Fawdyzi3dh
+Deleted temporary working directory /tmp/tmp.Fawdyzi3dh
 ~/mktmpdir$
 ```
 You will return to the original location where you call the script from
