@@ -29,11 +29,44 @@ entering /tmp/tmp.Fawdyzi3dh...
 ```
 
 To exit the environment, simpily exit
-```
+```bash
 (temp) /tmp/tmp.Fawdyzi3dh$ exit
 Deleted temporary working directory /tmp/tmp.Fawdyzi3dh
 ~/mktmpdir$
 ```
 You will return to the original location where you call the script from
+
+You can name the environment by supplying it through the `-n` option
+```bash
+~/mktmpdir$ mktmpdir -n hello
+creating temporary directory...
+entering /tmp/tmp.Fawdyzi3dh...
+(hello) /tmp/tmp.Fawdyzi3dh$ pwd
+/tmp/tmp.Fawdyzi3dh
+```
+
+### PERSIST mode
+
+Sometime you may want the directory to stay for a short period of time before it gets deleted.
+Persist mode provides this functionality to not delete the folder upon exit the environment
+
+To lunch a temporary environment in persist mode, type:
+```bash
+~/mktmpdir$ mktmpdir -p
+creating temporary directory...
+entering /tmp/tmp.IGb6XQNodf...
+(temp-PERSIST) /tmp/tmp.IGb6XQNodf$exit
+~/mktmpdir$
+```
+
+Alternatively, typed persist when you are in the environment achieve the same effect.
+```bash
+~/mktmpdir$ mktmpdir
+creating temporary directory...
+entering /tmp/tmp.etzCcIwcUk...
+(temp) /tmp/tmp.etzCcIwcUk$ persist
+(temp-PERSIST) /tmp/tmp.etzCcIwcUk$ exit
+~/mktmpdir$
+```
 
 
