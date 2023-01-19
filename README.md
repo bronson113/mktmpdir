@@ -69,4 +69,14 @@ entering /tmp/tmp.etzCcIwcUk...
 ~/mktmpdir$
 ```
 
+The persist command toggles the persist status of the current environment, so you can also exit persist mode by typing persist in the command line
+```bash
+~/mktmpdir$ mktmpdir -p
+creating temporary directory...
+entering /tmp/tmp.etzCcIwcUk...
+(temp-PERSIST) /tmp/tmp.etzCcIwcUk$ persist
+(temp) /tmp/tmp.etzCcIwcUk$ exit
+~/mktmpdir$
+```
+
 

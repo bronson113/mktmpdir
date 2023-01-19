@@ -60,9 +60,16 @@ fi
 export PS1
 
 # add a persist function so you can change your mind mid way
+# typing persist will flip the persist status
 function persist {
-    PERSIST=1;
-    PS1="($TMP_DIR_NAME-PERSIST) ${SAVED_PS1:-}"
+    if (( PERSIST == 1 ));
+    then
+        PS1="($TMP_DIR_NAME) ${SAVED_PS1:-}"
+        PERSIST=0;
+    else
+        PS1="($TMP_DIR_NAME-PERSIST) ${SAVED_PS1:-}"
+        PERSIST=1;
+    fi
 }
 
 
